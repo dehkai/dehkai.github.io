@@ -9,7 +9,7 @@ export const Bio = {
   github: "https://github.com/dehkai",
   resume:
     "https://drive.google.com/file/d/1UMn7MAdo6J2JL4zJ9fsFgha-4yo6VxOd/view?usp=sharing",
-  linkedin: "www.linkedin.com/in/yapdehkai/",
+  linkedin: "https://www.linkedin.com/in/yapdehkai/",
   twitter: "https://twitter.com/dehkai1",
   insta: "https://www.instagram.com/dk_0909_/",
   facebook: "https://www.facebook.com/profile.php?viewas=100000686899395&id=100006298097481/",
@@ -289,8 +289,8 @@ export const education = [
     img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/UTM-LOGO%20(1).png?alt=media&token=54c530ab-d5e2-413b-8ef2-761ee3cdea22",
     school: "Universiti Teknologi Malaysia, Skudai",
     date: "Sep 2023 - Sep 2026",
-    grade: "3.90/4.0",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science (Software Engineering) with Honours at Universiti Teknologi Malaysia, Skudai. I have completed 1 semesters and have a CGPA of 3.90. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+    grade: "3.86/4.0",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science (Software Engineering) with Honours at Universiti Teknologi Malaysia, Skudai. I have completed 1 semesters and have a CGPA of 3.86. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
     degree: "Bachelor of Computer Science (Software Engineering) with Honours",
   },
   {
