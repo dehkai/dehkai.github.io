@@ -343,6 +343,30 @@ export const education = [
 
 export const projects = [
   {
+    id: 8,
+    title: "Voxia - AI Smart Travel Assistant",
+    date: "Aug 2022 - Nov 2022",
+    description:"A web-based chatbot for smart travel planning and assistance.",
+
+   /* image:
+      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",*/
+    tags: [
+      "Python",
+      "ReactJS",
+      "ExpressJS",
+      "NodeJS",
+      "MongoDB",
+      "Javascript",
+      "Rasa",
+      "Render",
+      "Docker",
+      "Cloudflare",
+    ],
+    category: "web app",
+    github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
+    webapp: "https://trackify.duckdns.org",
+  },
+  {
     id: 9,
     title: "UTM Facility Booking System (UBS)",
     date: "Aug 2022 - Nov 2022",
