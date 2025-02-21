@@ -51,8 +51,17 @@ const Date = styled.div`
         font-size: 12px;
     }
 `
-
-
+const Video = styled.iframe`
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    @media only screen and (max-width: 600px) {
+        height: 300px;
+    }
+`;
 
 const Desc = styled.div`
     font-size: 16px;
@@ -200,6 +209,15 @@ const index = ({ openModal, setOpenModal }) => {
                     <Image src={project?.image} />
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
+                    {project?.video && (
+                        <Video
+                            src={`https://www.youtube.com/embed/${project.video}`}
+                            title="Project Video"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                    )}
                     <Tags>
                         {project?.tags.map((tag) => (
                             <Tag>{tag}</Tag>

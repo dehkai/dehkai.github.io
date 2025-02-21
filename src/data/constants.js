@@ -345,7 +345,7 @@ export const projects = [
   {
     id: 8,
     title: "Voxia - AI Smart Travel Assistant",
-    date: "Aug 2022 - Nov 2022",
+    date: "Oct 2024 - Jan 2025",
     description:"A web-based chatbot for smart travel planning and assistance.",
 
    /* image:
@@ -363,8 +363,23 @@ export const projects = [
       "Cloudflare",
     ],
     category: "web app",
-    github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
-    webapp: "https://trackify.duckdns.org",
+    //github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
+    video:"OPZ_O8IjBBc"
+  },
+  {
+    id: 8,
+    title: "WorkWise - A job searching platform",
+    date: "Mar 2024 - Jun 2024",
+    description:"A mobile application for freelancer to search job and employer to post job.",
+
+   /* image:
+      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",*/
+    tags: [
+      "Flutter",
+    ],
+    category: "web app",
+    //github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
+    video:"ypPCtw_3jaM"
   },
   {
     id: 9,
