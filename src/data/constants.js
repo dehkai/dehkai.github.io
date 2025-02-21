@@ -69,6 +69,10 @@ export const skills = [
     title: "Backend",
     skills: [
       {
+        name: "Spring",
+        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Spring_Framework-Logo.wine.png?alt=media&token=cf32cdc8-6880-4882-9d6e-926fa8bc1f7f",
+      },
+      {
         name: "PHP",
         image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/PHP-logo.svg.png?alt=media&token=dd5b5b8a-717d-45e7-8888-6ed595d27d0c",
       },
@@ -108,6 +112,10 @@ export const skills = [
       {
         name: "Firebase",
         image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      },
+      {
+        name: "MongoDB",
+        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/mongodblogo.png?alt=media&token=d0283644-9c47-4f55-bdc1-91078e891ce6",
       },
     ],
   },
@@ -178,6 +186,26 @@ export const skills = [
         name: "Figma",
         image:
           "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/figmalogo.png?alt=media&token=2bf8d9c1-e4e0-4549-8bf2-ca5766da97f6",
+      },
+      {
+        name: "Rasa",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/rasa.png?alt=media&token=675d53e1-c1fc-4e45-bcba-de4017ee84cf",
+      },
+      {
+        name: "Docker",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/dockerlogo.png?alt=media&token=fc91f76b-30cc-49c3-930c-c3d68b83d5b9",
+      },
+      {
+        name: "DigitalOcean",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/digitaloceanlogo.png?alt=media&token=8d5c9546-afb9-4e8d-a825-03b6d23b42da",
+      },
+      {
+        name: "Cloudflare",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Cloudflare_Logo.png?alt=media&token=dca31e3d-bed0-40a1-9b5a-cf461cfcfe61",
       },
     ],
   },
