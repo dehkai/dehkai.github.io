@@ -8,7 +8,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/dehkai",
   resume:
-    "https://drive.google.com/file/d/1X8AlRbBGvFH40LfplxhAaQxjKxV2wH5l/view?usp=sharing",
+    "https://drive.google.com/file/d/1Zj3sNj6XAQwCpCxB9v-F_HYDu_uQ_eNB/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/yapdehkai/",
   twitter: "https://twitter.com/dehkai1",
   insta: "https://www.instagram.com/dk_0909_/",
@@ -19,12 +19,12 @@ export const skills = [
   {
     title: "Frontend",
     skills: [
-      /*{
+      {
         name: "React Js",
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
-      {
+      /*{
         name: "Redux",
         image:
           "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
@@ -58,11 +58,11 @@ export const skills = [
         image:
             "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/angularjslogo.png?alt=media&token=f7d1035f-ec3c-4f32-924e-23578b1abafc",
       },
-      /*{
+      {
         name: "Flutter",
         image:
           "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png",
-      },*/
+      },
     ],
   },
   {
@@ -164,21 +164,21 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
-      /*{
+      {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-      },*/
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/postmanlogo.png?alt=media&token=27091e59-e386-49a6-9978-0d04f1eb398e",
+      },
       {
         name: "Adobe XD",
         image:
           "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Adobe_XD_CC_icon.svg.png?alt=media&token=802791c9-05c5-464a-ae68-c2e2085d0597",
       },
-      /*{
+      {
         name: "Figma",
         image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
-      },*/
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/figmalogo.png?alt=media&token=2bf8d9c1-e4e0-4549-8bf2-ca5766da97f6",
+      },
     ],
   },
 ];
@@ -302,15 +302,15 @@ export const education = [
     desc: "I completed my diploma course at UTM, Kuala Lumpur campus for 3 years",
     degree: "Diploma in Computer Science",
   },
-  {
-    id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/smkmutiararinilogo.jpg?alt=media&token=22217f87-6467-4be4-81c6-521857518508",
-    school: "SMK Mutiara Rini, Skudai",
-    date: "Apr 2017 - Apr 2019",
-    grade: "SPM 5A's 3B's 1C's",
-    desc: "I completed my secondary school for 5 years at SMK Mutiara Rini, Skudai.",
-    degree: "Science Stream",
-  },
+  // {
+  //   id: 2,
+  //   img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/smkmutiararinilogo.jpg?alt=media&token=22217f87-6467-4be4-81c6-521857518508",
+  //   school: "SMK Mutiara Rini, Skudai",
+  //   date: "Apr 2017 - Apr 2019",
+  //   grade: "SPM 5A's 3B's 1C's",
+  //   desc: "I completed my secondary school for 5 years at SMK Mutiara Rini, Skudai.",
+  //   degree: "Science Stream",
+  // },
 ];
 
 export const projects = [
