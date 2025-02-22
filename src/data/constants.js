@@ -70,7 +70,7 @@ export const skills = [
     skills: [
       {
         name: "Spring",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Spring_Framework-Logo.wine.png?alt=media&token=cf32cdc8-6880-4882-9d6e-926fa8bc1f7f",
+        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/spring.svg?alt=media&token=8f1ab888-f283-44bd-b689-118c9fa12d5a",
       },
       {
         name: "PHP",
@@ -115,7 +115,7 @@ export const skills = [
       },
       {
         name: "MongoDB",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/mongodblogo.png?alt=media&token=d0283644-9c47-4f55-bdc1-91078e891ce6",
+        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/mongodb.svg?alt=media&token=249696c4-f999-45a4-8bb6-eb647662c697",
       },
     ],
   },
@@ -160,7 +160,7 @@ export const skills = [
       {
         name: "AWS EC2",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/aws-ec2logo.jpg?alt=media&token=60deb878-4412-4391-8528-617f66fb6e43",
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/aws-ec2-icon.png?alt=media&token=a5e43c3d-c208-46e6-aa33-d1ef712a4a99",
       },
       {
         name: "Netlify",
@@ -175,7 +175,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/postmanlogo.png?alt=media&token=27091e59-e386-49a6-9978-0d04f1eb398e",
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/postman-icon.svg?alt=media&token=eb17bb23-26f7-498d-990d-b000b57fe3da",
       },
       {
         name: "Adobe XD",
@@ -185,7 +185,7 @@ export const skills = [
       {
         name: "Figma",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/figmalogo.png?alt=media&token=2bf8d9c1-e4e0-4549-8bf2-ca5766da97f6",
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Figma-logo.svg.png?alt=media&token=dea15feb-f630-4681-bc72-6d0dfb1980cd",
       },
       {
         name: "Rasa",
@@ -195,12 +195,12 @@ export const skills = [
       {
         name: "Docker",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/dockerlogo.png?alt=media&token=fc91f76b-30cc-49c3-930c-c3d68b83d5b9",
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/docker.png?alt=media&token=bcc18c16-f663-4ce3-8c60-a51ba90f6fc7",
       },
       {
         name: "DigitalOcean",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/digitaloceanlogo.png?alt=media&token=8d5c9546-afb9-4e8d-a825-03b6d23b42da",
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/digitalocean.png?alt=media&token=446cfe52-7c62-45c1-b560-7c997ac0e72b",
       },
       {
         name: "Cloudflare",
