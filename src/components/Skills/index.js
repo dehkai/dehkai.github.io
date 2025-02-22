@@ -60,15 +60,15 @@ const Skill = styled.div`
   width: 100%;
   max-width: 500px;
   background: ${({ theme }) => `${theme.card}99`};
-  border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 16px;
   padding: 18px 36px;
   backdrop-filter: blur(4px);
   transition: all 0.3s ease-in-out;
   &:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 0 20px rgba(133, 76, 230, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     background: ${({ theme }) => `${theme.card}cc`};
   }
   @media (max-width: 768px) {
