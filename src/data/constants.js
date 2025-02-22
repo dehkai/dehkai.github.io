@@ -316,9 +316,9 @@ export const education = [
     id: 0,
     img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/UTM-logo%20(1).png?alt=media&token=5fb669db-dc5f-4fcf-9604-2aef85d87f1a",
     school: "Universiti Teknologi Malaysia, Skudai",
-    date: "Sep 2023 - Sep 2026",
-    grade: "3.86/4.0",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science (Software Engineering) with Honours at Universiti Teknologi Malaysia, Skudai. I have completed 1 semesters and have a CGPA of 3.86. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+    date: "Sep 2023 - Present",
+    grade: "3.89/4.0",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science (Software Engineering) with Honours at Universiti Teknologi Malaysia, Skudai. I have completed 3 semesters and have a CGPA of 3.89. I have taken courses in Artificial Intelligent, Application Development, Mobile Application Programming, Software Design & Architecture and Software Engineering among others.",
     degree: "Bachelor of Computer Science (Software Engineering) with Honours",
   },
   {
