@@ -314,7 +314,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/UTM-LOGO%20(1).png?alt=media&token=54c530ab-d5e2-413b-8ef2-761ee3cdea22",
+    img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/UTM-logo%20(1).png?alt=media&token=5fb669db-dc5f-4fcf-9604-2aef85d87f1a",
     school: "Universiti Teknologi Malaysia, Skudai",
     date: "Sep 2023 - Sep 2026",
     grade: "3.86/4.0",
@@ -323,7 +323,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/UTM-LOGO%20(1).png?alt=media&token=54c530ab-d5e2-413b-8ef2-761ee3cdea22",
+    img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/UTM-logo%20(1).png?alt=media&token=5fb669db-dc5f-4fcf-9604-2aef85d87f1a",
     school: "Universiti Teknologi Malaysia, Kuala Lumpur",
     date: "Apr 2019 - Apr 2023",
     grade: "3.91/4.0",
