@@ -60,18 +60,20 @@ const ContactForm = styled.form`
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => `${theme.card}99`};
+  background: rgba(255, 255, 255, 0.05);
   padding: 32px;
   border-radius: 16px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   margin-top: 28px;
   gap: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  backdrop-filter: blur(4px);
   transition: all 0.3s ease-in-out;
   &:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transform: translateY(-5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     background: ${({ theme }) => `${theme.card}cc`};
   }
 `
