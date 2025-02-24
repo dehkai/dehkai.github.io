@@ -14,6 +14,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import SplashCursor from './components/SplashCursor';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -33,6 +34,7 @@ function App() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
+      <SplashCursor />
         <Navbar />
         <Body>
           <HeroSection />
