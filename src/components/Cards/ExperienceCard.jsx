@@ -36,8 +36,8 @@ text-overflow: ellipsis;
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
-    background: ${({ theme }) => `${theme.card}99`};
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    background: ${({ theme }) => `${theme.card}40`};
+    border: 1px solid rgba(133, 76, 230, 0.3);
     padding: 12px 16px;
     justify-content: space-between;
     position: relative;
@@ -45,13 +45,34 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
-    backdrop-filter: blur(4px);
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        transform: translateY(-5px) scale(1.02);
-        background: ${({ theme }) => `${theme.card}cc`};
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
     }
+
+    &:hover {
+        box-shadow: 0 15px 45px rgba(133, 76, 230, 0.2);
+        transform: translateY(-5px) scale(1.02);
+        background: ${({ theme }) => `${theme.card}60`};
+        border: 1px solid ${({ theme }) => `${theme.primary}50`};
+        &::before {
+            opacity: 1;
+        }
+    }
+
     @media only screen and (max-width: 768px){
         padding: 10px;
         gap: 8px;
@@ -66,8 +87,6 @@ const Card = styled.div`
         overflow: visible;
         -webkit-line-clamp: unset;
     }
-    border: 1px solid rgba(133, 76, 230, 0.3);
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `
 
 const Top = styled.div`
