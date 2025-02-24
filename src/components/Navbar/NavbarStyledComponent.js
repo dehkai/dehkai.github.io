@@ -75,26 +75,45 @@ export const NavLink = styled.a`
 
 
 export const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  background: linear-gradient(
+    120deg,
+    rgba(58, 41, 255, 0.1) 0%,
+    rgba(255, 148, 180, 0.1) 100%
+  );
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.text_primary};
   cursor: pointer;
   padding: 0 20px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.6s ease-in-out;
-    :hover {
-      background: ${({ theme }) => theme.primary};
-      color: ${({ theme }) => theme.white};     
-    }
-    @media screen and (max-width: 768px) { 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(58, 41, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(4px);
+  
+  :hover {
+    transform: scale(1.05);
+    background: linear-gradient(
+      120deg,
+      rgba(58, 41, 255, 0.2) 0%,
+      rgba(255, 148, 180, 0.2) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(58, 41, 255, 0.4);
+  }
+  
+  :active {
+    transform: scale(0.95);
+  }
+  
+  @media screen and (max-width: 768px) { 
     font-size: 14px;
-    }
+  }
 `;
 
 export const ButtonContainer = styled.div`
