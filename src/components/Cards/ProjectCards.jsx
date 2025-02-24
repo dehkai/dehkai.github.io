@@ -18,21 +18,41 @@ const Button = styled.button`
 const Card = styled.div`
     width: 330px;
     height: 300px;
-    background-color: ${({ theme }) => theme.card};
+    background-color: ${({ theme }) => `${theme.card}80`};
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    box-shadow: 0 0 12px 4px rgba(0,0,0,0.2);
     overflow: hidden;
     padding: 26px 20px;
     display: flex;
     flex-direction: column;
     gap: 14px;
     transition: all 0.5s ease-in-out;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+    }
+
     &:hover {
         transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
+        box-shadow: 0 0 50px 4px rgba(0,0,0,0.3);
+        &::before {
+            opacity: 1;
+        }
     }
+
     &:hover ${Button} {
         display: block;
     }
