@@ -15,11 +15,23 @@ import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 import SplashCursor from './components/SplashCursor';
+import Aurora from './components/Aurora';
+
+const AuroraWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+`
 
 const Body = styled.div`
-  background-color: ${({ theme }) => theme.bg};
+  position: relative;
   width: 100%;
   overflow-x: hidden;
+  z-index: 1;
 `
 
 const Wrapper = styled.div`
@@ -34,7 +46,15 @@ function App() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
-      <SplashCursor />
+        <AuroraWrapper>
+          <Aurora
+            colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+            blend={0.5}
+            amplitude={1.0}
+            speed={0.5}
+          />
+        </AuroraWrapper>
+        <SplashCursor />
         <Navbar />
         <Body>
           <HeroSection />
