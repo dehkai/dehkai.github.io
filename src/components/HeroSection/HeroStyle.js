@@ -100,7 +100,15 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(133, 76, 230, 0.3);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    border: 2px solid rgba(133, 76, 230, 0.5);
+    box-shadow: 0 0 30px rgba(133, 76, 230, 0.5);
+  }
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -176,29 +184,40 @@ export const ResumeButton = styled.a`
     max-width: 300px;
     text-align: center;
     padding: 16px 0;
-    color:${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(
+        120deg,
+        rgba(97, 184, 255, 0.15) 0%,
+        rgba(86, 219, 217, 0.15) 25%,
+        rgba(110, 200, 255, 0.15) 50%,
+        rgba(70, 235, 208, 0.15) 75%,
+        rgba(126, 163, 255, 0.15) 100%
+    );
+    border: 1px solid rgba(126, 163, 255, 0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(126, 163, 255, 0.2);
+
     &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
+        transform: translateY(-2px);
+        background: linear-gradient(
+            120deg,
+            rgba(97, 184, 255, 0.25) 0%,
+            rgba(86, 219, 217, 0.25) 25%,
+            rgba(110, 200, 255, 0.25) 50%,
+            rgba(70, 235, 208, 0.25) 75%,
+            rgba(126, 163, 255, 0.25) 100%
+        );
+        border: 1px solid rgba(126, 163, 255, 0.4);
+        box-shadow: 0 8px 32px rgba(126, 163, 255, 0.3);
     }    
-    
     
     @media (max-width: 640px) {
         padding: 12px 0;
         font-size: 18px;
     } 
-
 `;
