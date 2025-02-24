@@ -60,12 +60,20 @@ const ContactForm = styled.form`
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.card};
+  background-color: ${({ theme }) => `${theme.card}99`};
   padding: 32px;
   border-radius: 16px;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   margin-top: 28px;
   gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.02);
+    background: ${({ theme }) => `${theme.card}cc`};
+  }
 `
 
 const ContactTitle = styled.div`
@@ -84,7 +92,12 @@ const ContactInput = styled.input`
   color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
   padding: 12px 16px;
+  transition: all 0.3s ease-in-out;
   &:focus {
+    border: 1px solid ${({ theme }) => theme.primary};
+    box-shadow: 0 0 10px rgba(133, 76, 230, 0.3);
+  }
+  &:hover {
     border: 1px solid ${({ theme }) => theme.primary};
   }
 `
@@ -98,7 +111,12 @@ const ContactInputMessage = styled.textarea`
   color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
   padding: 12px 16px;
+  transition: all 0.3s ease-in-out;
   &:focus {
+    border: 1px solid ${({ theme }) => theme.primary};
+    box-shadow: 0 0 10px rgba(133, 76, 230, 0.3);
+  }
+  &:hover {
     border: 1px solid ${({ theme }) => theme.primary};
   }
 `
@@ -109,8 +127,6 @@ const ContactButton = styled.input`
   text-align: center;
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
@@ -118,6 +134,15 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(133, 76, 230, 0.4);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
 `
 
 
