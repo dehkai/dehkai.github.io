@@ -127,23 +127,30 @@ const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: rgba(133, 76, 230, 0.1);
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
-  border: none;
+  border: 1px solid rgba(133, 76, 230, 0.3);
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
   &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(133, 76, 230, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(133, 76, 230, 0.3);
+    border: 1px solid rgba(133, 76, 230, 0.6);
+    background: rgba(133, 76, 230, 0.2);
   }
+
   &:active {
-    transform: scale(0.95);
+    transform: translateY(2px);
+    box-shadow: 0 4px 16px rgba(133, 76, 230, 0.2);
   }
 `
 
