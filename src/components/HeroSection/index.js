@@ -5,8 +5,10 @@ import HeroImg from '../../images/HeroImage.jpeg'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
 import BlurText from "../BlurText";
+import SplitText from "../SplitText";
 
 const HeroSection = () => {
+
     return (
         <div id="about">
             <HeroContainer>
@@ -41,7 +43,17 @@ const HeroSection = () => {
                                 />
                             </Span>
                         </TextLoop>
-                        <SubTitle>{Bio.description}</SubTitle>
+                        <SubTitle>
+                            <SplitText
+                                text={Bio.description}
+                                delay={30}
+                                animationFrom={{ opacity: 0, transform: 'translate3d(0,20px,0)' }}
+                                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                easing="easeOutCubic"
+                                threshold={0.2}
+                                rootMargin="-20px"
+                            />
+                        </SubTitle>
                         <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
                     </HeroLeftContainer>
 
