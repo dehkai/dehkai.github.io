@@ -62,17 +62,21 @@ export const NavLink = styled.a`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
     text-decoration: none;
-    :hover {
-      color: ${({ theme }) => theme.primary};
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+      color: #fff;
+      transform: translateY(-2px) scale(1.05);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
 
     &.active {
-      border-bottom: 2px solid ${({ theme }) => theme.primary};
+      border-bottom: 2px solid #3A29FF;
     }
 `;
-
 
 export const GitHubButton = styled.a`
   background: linear-gradient(
@@ -210,21 +214,37 @@ export const MobileMenuButton = styled.a`
   }
 `;
 
-export  const MobileLink = styled.a`
+export const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.primary};
-  }
-
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
-  }
+  position: relative;
+  padding: 5px 0;
+  &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background: linear-gradient(90deg, #3A29FF, #FF94B4, #FF3232);
+      transition: all 0.3s ease-in-out;
+      transform: translateX(-50%);
+    }
+    &:hover {
+      color: #fff;
+      transform: translateY(-2px) scale(1.05);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      &:before {
+        width: 100%;
+      }
+    }
+    &.active {
+      border-bottom: 2px solid #3A29FF;
+    }
 `;
-
 export const MobileNavLogo = styled(LinkR)`
   width: 80%;
   padding: 0 6px;
