@@ -20,7 +20,7 @@ export const skills = [
     title: "Frontend",
     skills: [
       {
-        name: "React Js",
+        name: "React",
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
@@ -63,11 +63,24 @@ export const skills = [
         image:
           "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png",
       },
+      {
+        name: "Material UI",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/materialui.png?alt=media&token=64f3c0e5-aecb-49a8-9a87-0bc8015fec19",
+      },
     ],
   },
   {
     title: "Backend",
     skills: [
+      {
+        name: "NodeJS",
+        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/nodejs.webp?alt=media&token=108bf9c3-0008-4136-9d67-167c0126bd68",
+      },
+      {
+        name: "ExpressJS",
+        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/express-js.png?alt=media&token=384c2e9b-8b55-4a37-9ffb-f014a428791e",
+      },
       {
         name: "Spring",
         image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/spring.svg?alt=media&token=8f1ab888-f283-44bd-b689-118c9fa12d5a",
@@ -83,22 +96,22 @@ export const skills = [
       },
       {
         name: "ASP.Net",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/ASP.NET_logo.avif?alt=media&token=84ea873d-24bd-403d-b2f3-235bc53ad98e",
+        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/asp.net.webp?alt=media&token=598baf28-198d-4841-a899-5ea73fd68dad",
       },
-      {
-        name: "C",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/clanguagelogo.png?alt=media&token=f7bfefdb-d7bc-4ea3-a49c-794363326eb9",
-      },
-      {
-        name: "C++",
-        image:
-            "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/ISO_C%2B%2B_Logo.svg.png?alt=media&token=0ac1c8ac-2a2d-4c10-91ab-dba804481e4d",
-      },
-      {
-        name: "VB.Net",
-        image:
-            "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/VB.NET_Logo.svg.png?alt=media&token=dd6e0860-ae33-421c-85ec-cdbbf14a673b",
-      },
+      // {
+      //   name: "C",
+      //   image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/clanguagelogo.png?alt=media&token=f7bfefdb-d7bc-4ea3-a49c-794363326eb9",
+      // },
+      // {
+      //   name: "C++",
+      //   image:
+      //       "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/ISO_C%2B%2B_Logo.svg.png?alt=media&token=0ac1c8ac-2a2d-4c10-91ab-dba804481e4d",
+      // },
+      // {
+      //   name: "VB.Net",
+      //   image:
+      //       "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/VB.NET_Logo.svg.png?alt=media&token=dd6e0860-ae33-421c-85ec-cdbbf14a673b",
+      // },
       {
         name: "Python",
         image:
@@ -116,6 +129,60 @@ export const skills = [
       {
         name: "MongoDB",
         image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/mongodb.svg?alt=media&token=249696c4-f999-45a4-8bb6-eb647662c697",
+      },
+      {
+        name: "Postgresql",
+        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/postgresql.webp?alt=media&token=20889f53-1820-49f0-8d78-f18ffb2a5a24",
+      },
+    ],
+  },
+  {
+    title: "DevOps",
+    skills: [
+      {
+        name: "AWS EC2",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/aws-ec2-icon.png?alt=media&token=a5e43c3d-c208-46e6-aa33-d1ef712a4a99",
+      },
+      {
+        name: "Netlify",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/netlify.svg?alt=media&token=98061b31-3677-4130-8eb4-25f2ff9b7bba",
+      },
+      {
+        name: "Docker",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/docker.png?alt=media&token=bcc18c16-f663-4ce3-8c60-a51ba90f6fc7",
+      },
+      {
+        name: "DigitalOcean",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/digitalocean.png?alt=media&token=446cfe52-7c62-45c1-b560-7c997ac0e72b",
+      },
+      {
+        name: "Git",
+        image:
+        "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Git.png?alt=media&token=720b15a1-b826-4f31-8b9b-28c9cde09c3b"
+      },
+      {
+        name: "GitHub",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/github.png?alt=media&token=d71d0d32-54a4-40c1-94d5-840a2a52411d",
+      },
+      {
+        name: "GitLab",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/gitlab.svg?alt=media&token=e9d9dbc7-5848-431a-bfaa-c91d89ac7018",
+      },
+      {
+        name: "Jira",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/jira.svg?alt=media&token=4c91ac0e-a1c5-4a10-9496-10f60feaca70",
+      },
+      {
+        name: "Nginx",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/nginx.svg?alt=media&token=1aa948e9-b9c6-4e87-be60-5dcd833ae76a",
       },
     ],
   },
@@ -145,33 +212,28 @@ export const skills = [
     ],
   },
   {
-    title: "Others",
+    title: "Machine Learning",
     skills: [
       {
-        name: "Git",
+        name: "Python",
         image:
-        "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/gitlogo.png?alt=media&token=a1a9b300-8234-428d-9814-c09329ae50f8"
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
       },
       {
-        name: "GitHub",
+        name: "Rasa",
         image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/rasa.avif?alt=media&token=9a14fb02-cf84-4002-bb09-63bd221300c2",
       },
-      {
-        name: "AWS EC2",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/aws-ec2-icon.png?alt=media&token=a5e43c3d-c208-46e6-aa33-d1ef712a4a99",
-      },
-      {
-        name: "Netlify",
-        image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-      },
-      {
-        name: "VS Code",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
-      },
+    ],
+  },
+  {
+    title: "Others",
+    skills: [
+      // {
+      //   name: "VS Code",
+      //   image:
+      //     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+      // },
       {
         name: "Postman",
         image:
@@ -185,22 +247,7 @@ export const skills = [
       {
         name: "Figma",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Figma-logo.svg.png?alt=media&token=dea15feb-f630-4681-bc72-6d0dfb1980cd",
-      },
-      {
-        name: "Rasa",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/rasa.png?alt=media&token=675d53e1-c1fc-4e45-bcba-de4017ee84cf",
-      },
-      {
-        name: "Docker",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/docker.png?alt=media&token=bcc18c16-f663-4ce3-8c60-a51ba90f6fc7",
-      },
-      {
-        name: "DigitalOcean",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/digitalocean.png?alt=media&token=446cfe52-7c62-45c1-b560-7c997ac0e72b",
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/figma-logo-512.webp?alt=media&token=9506003a-dd45-433c-808f-2a142cca606a",
       },
       {
         name: "Cloudflare",
