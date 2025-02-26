@@ -17,7 +17,7 @@ const Button = styled.button`
 `
 const Card = styled.div`
     width: 330px;
-    height: 300px;
+    height: ${props => props.hasImage ? '500px' : '300px'};
     background-color: ${({ theme }) => `${theme.card}40`};
     cursor: pointer;
     border-radius: 16px;
@@ -32,19 +32,6 @@ const Card = styled.div`
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.1) 0%, transparent 100%);
-        opacity: 0;
-        transition: opacity 0.3s;
-        pointer-events: none;
-    }
 
     &::before {
         content: '';
@@ -159,25 +146,20 @@ const Avatar = styled.img`
 
 const ProjectCards = ({project,setOpenModal}) => {
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            {/*<Image src={project.image}/>*/}
-
+        <Card hasImage={Boolean(project.image)} onClick={() => setOpenModal({state: true, project: project})}>
+            {project.image && (
+                <Image src={project.image}/>
+            )}
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
                 <Tags>
                     {project.tags?.map((tag, index) => (
-                        <Tag>{tag}</Tag>
+                        <Tag key={index}>{tag}</Tag>
                     ))}
                 </Tags>
             </Details>
-            {/*<Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
-                ))}
-            </Members>*/}
-            {/* <Button>View Project</Button> */}
         </Card>
     )
 }

@@ -395,8 +395,8 @@ export const projects = [
     date: "Oct 2024 - Jan 2025",
     description:"A web-based chatbot for smart travel planning and assistance.",
 
-   /* image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",*/
+   image:
+      "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Voxia1.JPG?alt=media&token=4c5bc0ea-358e-4491-8f78-b7f5e07680a1",
     tags: [
       "Python",
       "ReactJS",
@@ -414,13 +414,35 @@ export const projects = [
     video:"OPZ_O8IjBBc"
   },
   {
+    id: 2,
+    title: "School Resource Centre TV (TVPSS)",
+    date: "Oct 2024 - Jan 2025",
+    description:"The TVPSS Management Information System was developed to streamline the monitoring and management of the TV Pusat Sumber Sekolah (TVPSS) program, which empowers students to showcase their talents in journalism, media, and hosting. The system provides a centralized platform for collecting and accessing essential data, such as school branding, crew profiles, equipment levels, and YouTube channel links. With features like a user-friendly interface, search and filter functionality, and content library management, the system enables efficient resource allocation, improved decision-making, and enhanced communication between schools and the central management team.",
+
+   image:
+      "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/TVPSS.JPG?alt=media&token=fec139c2-0fb6-4693-b800-455f172a0cd8",
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "PostgreSQL",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Thymeleaf", 
+    ],
+    category: "web app",
+    github: "https://github.com/dehkai/TVPSS-Edu-Resource-Hub",
+    //video:"OPZ_O8IjBBc"
+  },
+  {
     id: 8,
     title: "WorkWise - A job searching platform",
     date: "Mar 2024 - Jun 2024",
     description:"A mobile application for freelancer to search job and employer to post job.",
 
-   /* image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",*/
+   image:
+      "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/WorkWise.JPG?alt=media&token=18c286d5-9f0c-4a3e-b992-4024960eda67",
     tags: [
       "Flutter",
     ],
@@ -447,7 +469,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
-    webapp: "https://trackify.duckdns.org",
+    // webapp: "https://trackify.duckdns.org",
   },
   {
     id: 0,
@@ -459,7 +481,7 @@ export const projects = [
     tags: ["VB.Net"],
     category: "web app",
     github: "https://github.com/dehkai/GroupProject_VB_G5",
-    webapp: "https://podstream.netlify.app/",
+    // webapp: "https://podstream.netlify.app/",
     /*member: [
       {
         name: "Rishav Chanda",
@@ -488,7 +510,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/dehkai/MP_Project_EcommerceMobileApplication",
-    webapp: "https://vexa-app.netlify.app/",
+    // webapp: "https://vexa-app.netlify.app/",
   },
   /*{
     id: 2,
