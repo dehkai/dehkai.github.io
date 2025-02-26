@@ -87,42 +87,61 @@ const ContactTitle = styled.div`
 
 const ContactInput = styled.input`
   flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   outline: none;
   font-size: 18px;
   color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
   padding: 12px 16px;
   transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-    box-shadow: 0 0 10px rgba(133, 76, 230, 0.3);
+    border: 1px solid rgba(133, 76, 230, 0.5);
+    box-shadow: 0 0 10px rgba(133, 76, 230, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
   &:hover {
-    border: 1px solid ${({ theme }) => theme.primary};
+    border: 1px solid rgba(133, 76, 230, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   }
 `
 
 const ContactInputMessage = styled.textarea`
   flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   outline: none;
   font-size: 18px;
   color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
   padding: 12px 16px;
   transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-    box-shadow: 0 0 10px rgba(133, 76, 230, 0.3);
+    border: 1px solid rgba(133, 76, 230, 0.5);
+    box-shadow: 0 0 10px rgba(133, 76, 230, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
   &:hover {
-    border: 1px solid ${({ theme }) => theme.primary};
+    border: 1px solid rgba(133, 76, 230, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   }
 `
-
 const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
