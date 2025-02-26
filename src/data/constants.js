@@ -411,7 +411,8 @@ export const projects = [
     ],
     category: "web app",
     //github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
-    video:"OPZ_O8IjBBc"
+    video:"OPZ_O8IjBBc",
+    webapp:"https://voxia.my"
   },
   {
     id: 2,
@@ -446,6 +447,7 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/WorkWise.JPG?alt=media&token=18c286d5-9f0c-4a3e-b992-4024960eda67",
     tags: [
       "Flutter",
+      "Firebase"
     ],
     category: "web app",
     //github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
