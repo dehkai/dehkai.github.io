@@ -173,23 +173,28 @@ const Button = styled.a`
     font-weight: 600;
     color: ${({ theme }) => theme.text_primary};
     padding: 12px 16px;
-    border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary};
-    ${({ dull, theme }) => dull && `
-        background-color: ${theme.bgLight};
-        color: ${theme.text_secondary};
-        &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
-        }
-    `}
+    border-radius: 12px;
+    background: ${({ dull, theme }) => dull ? `${theme.card}40` : `rgba(133, 76, 230, 0.1)`};
+    border: 1px solid ${({ dull, theme }) => dull ? 'rgba(255, 255, 255, 0.18)' : 'rgba(133, 76, 230, 0.3)'};
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease-in-out;
     &:hover {
-        background-color: ${({ theme }) => theme.primary + 99};
+        transform: translateY(-3px);
+        box-shadow: ${({ dull }) => dull ? '0 8px 32px rgba(31, 38, 135, 0.37)' : '0 8px 32px rgba(133, 76, 230, 0.3)'};
+        border: 1px solid ${({ dull }) => dull ? 'rgba(255, 255, 255, 0.25)' : 'rgba(133, 76, 230, 0.6)'};
+        background: ${({ dull, theme }) => dull ? `${theme.card}90` : 'rgba(133, 76, 230, 0.2)'};
+    }
+    &:active {
+        transform: translateY(2px);
+        box-shadow: ${({ dull }) => dull ? '0 4px 16px rgba(31, 38, 135, 0.2)' : '0 4px 16px rgba(133, 76, 230, 0.2)'};
     }
     @media only screen and (max-width: 600px) {
         font-size: 12px;
+        padding: 8px 12px;
     }
 `;
 
