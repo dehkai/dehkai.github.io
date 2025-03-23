@@ -8,7 +8,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/dehkai",
   resume:
-    "https://drive.google.com/file/d/1Zj3sNj6XAQwCpCxB9v-F_HYDu_uQ_eNB/view?usp=sharing",
+    "https://drive.google.com/file/d/1A8RweBzsSHb5KdwLo44iq46_213m4B12/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/yapdehkai/",
   twitter: "https://twitter.com/dehkai1",
   insta: "https://www.instagram.com/dk_0909_/",
