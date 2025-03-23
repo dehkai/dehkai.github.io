@@ -4,9 +4,12 @@ import styled from 'styled-components'
 const Document = styled.img`
     display: none;
     height: 70px;
-    width: fit-content;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
     background-color: #000;
     border-radius: 10px;
+    margin-top: auto;
     &:hover{
         cursor: pointer;
         opacity: 0.8;
@@ -44,6 +47,7 @@ const Card = styled.div`
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    min-height: 180px;
     gap: 12px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -195,7 +199,7 @@ const ExperienceCard = ({ experience }) => {
                 }
             </Description>
             {experience.doc &&
-                <a href={experience.doc} target="new">
+                <a href={experience.doc} target="new" style={{ alignSelf: 'flex-start' }}>
                     <Document src={experience.doc} />
                 </a>
             }
