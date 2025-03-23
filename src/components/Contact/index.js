@@ -95,21 +95,15 @@ const ContactInput = styled.input`
   border-radius: 12px;
   padding: 12px 16px;
   transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   &:focus {
     border: 1px solid rgba(133, 76, 230, 0.5);
     box-shadow: 0 0 10px rgba(133, 76, 230, 0.2);
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
   }
   &:hover {
     border: 1px solid rgba(133, 76, 230, 0.3);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.07);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   }
 `
@@ -124,24 +118,19 @@ const ContactInputMessage = styled.textarea`
   border-radius: 12px;
   padding: 12px 16px;
   transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   &:focus {
     border: 1px solid rgba(133, 76, 230, 0.5);
     box-shadow: 0 0 10px rgba(133, 76, 230, 0.2);
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
   }
   &:hover {
     border: 1px solid rgba(133, 76, 230, 0.3);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.07);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   }
 `
+
 const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
@@ -156,15 +145,13 @@ const ContactButton = styled.input`
   font-weight: 600;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 32px rgba(133, 76, 230, 0.3);
     border: 1px solid rgba(133, 76, 230, 0.6);
-    background: rgba(133, 76, 230, 0.2);
+    background: rgba(133, 76, 230, 0.15);
   }
 
   &:active {
