@@ -54,7 +54,12 @@ const HeroSection = () => {
                                 rootMargin="-20px"
                             />
                         </SubTitle>
-                        <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
+                        <ResumeButton 
+                            href={Bio.resume} 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            Check Resume
+                        </ResumeButton>
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">

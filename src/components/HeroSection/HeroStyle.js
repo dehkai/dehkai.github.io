@@ -199,8 +199,10 @@ export const ResumeButton = styled.a`
         rgba(126, 163, 255, 0.15) 100%
     );
     border: 1px solid rgba(126, 163, 255, 0.3);
+    -webkit-backdrop-filter: blur(8px); /* For Safari Render*/
     backdrop-filter: blur(8px);
     box-shadow: 0 8px 32px rgba(126, 163, 255, 0.2);
+    display: inline-block; /* Add to ensure consistent display */
 
     &:hover {
         transform: translateY(-2px);
