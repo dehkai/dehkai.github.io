@@ -393,7 +393,7 @@ export const projects = [
     id: 8,
     title: "Voxia - AI Smart Travel Assistant",
     date: "Oct 2024 - Jan 2025",
-    description:"A web-based chatbot for smart travel planning and assistance.",
+    description:"Voxia is an intelligent AI assistant platform that specializes in travel-related tasks and document automation. Built with modern technologies, it offers a seamless experience for flight and hotel searches, travel request generation, and PDF form auto-filling.",
 
    image:
       "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Voxia1.JPG?alt=media&token=4c5bc0ea-358e-4491-8f78-b7f5e07680a1",
