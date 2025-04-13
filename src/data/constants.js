@@ -410,7 +410,7 @@ export const projects = [
       "Cloudflare",
     ],
     category: "web app",
-    //github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
+    github: "https://github.com/dehkai/Voxia",
     video:"OPZ_O8IjBBc",
     webapp:"https://voxia.my"
   },
@@ -451,7 +451,7 @@ export const projects = [
       "Firebase"
     ],
     category: "web app",
-    //github: "https://github.com/dehkai/UTMFacilityBookingSystem-UBS-",
+    github: "https://github.com/dehkai/WorkWise",
     video:"ypPCtw_3jaM"
   },
   {
