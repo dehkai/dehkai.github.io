@@ -253,6 +253,11 @@ export const skills = [
         image:
           "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Cloudflare_Logo.png?alt=media&token=dca31e3d-bed0-40a1-9b5a-cf461cfcfe61",
       },
+      {
+        name: "UiPath",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/uipath%20logo.png?alt=media&token=3bf0112b-3f4a-456c-965c-193784947dcf",
+      }
     ],
   },
 ];
