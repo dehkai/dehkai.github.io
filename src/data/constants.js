@@ -283,7 +283,7 @@ export const experiences = [
     id: 1,
     img: "dhl-logo.png",
     role: "Industrial Trainee - Software Development",
-    company: "DHL Asia Pacific Shared Services Sdn Bhd",
+    company: "DHL Global Finance Services - Asia Pacific",
     date: "August 2025 - Present",
     desc: "Contributed to system enhancements and digitalization projects by developing web applications, supporting process improvements, and collaborating with cross-functional teams.",
     skills: [
