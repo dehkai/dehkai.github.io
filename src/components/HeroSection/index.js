@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroBgAnimation from '../HeroBgAnimation'
-import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle,SocialMediaIcons,SocialMediaIcon, ResumeButton } from './HeroStyle'
+import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle, SocialMediaIcons, SocialMediaIcon, ResumeButton } from './HeroStyle'
 import HeroImg from '../../images/Hackathon.jpeg'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
@@ -54,12 +54,13 @@ const HeroSection = () => {
                                 rootMargin="-20px"
                             />
                         </SubTitle>
-                        <ResumeButton 
-                            href={Bio.resume} 
-                            target="_blank" 
+                        <ResumeButton
+                            href={Bio.resume}
+                            target="_blank"
                             rel="noopener noreferrer">
                             Check Resume
                         </ResumeButton>
+
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">

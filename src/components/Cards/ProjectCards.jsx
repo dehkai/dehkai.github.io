@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion';
 
 
 const Button = styled.button`
@@ -15,7 +16,7 @@ const Button = styled.button`
     cursor: pointer;
     transition: all 0.8s ease-in-out;
 `
-const Card = styled.div`
+const Card = styled(motion.div)`
     width: 330px;
     height: ${props => props.hasImage ? '500px' : '300px'};
     background-color: ${({ theme }) => `${theme.card}40`};
@@ -27,7 +28,6 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 14px;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -47,8 +47,6 @@ const Card = styled.div`
     }
 
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.3);
         &::before {
             opacity: 1;
         }
@@ -144,11 +142,19 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `*/
 
-const ProjectCards = ({project,setOpenModal}) => {
+const ProjectCards = ({ project, setOpenModal }) => {
     return (
-        <Card hasImage={Boolean(project.image)} onClick={() => setOpenModal({state: true, project: project})}>
+        <Card
+            hasImage={Boolean(project.image)}
+            onClick={() => setOpenModal({ state: true, project: project })}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, type: 'spring', stiffness: 50 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.02, rotate: 1, zIndex: 1, y: -10, boxShadow: "0 0 50px 4px rgba(0,0,0,0.3)" }}
+        >
             {project.image && (
-                <Image src={project.image}/>
+                <Image src={project.image} />
             )}
             <Details>
                 <Title>{project.title}</Title>

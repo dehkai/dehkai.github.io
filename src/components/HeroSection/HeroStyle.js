@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkScroll } from 'react-scroll';
 import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
@@ -223,3 +224,5 @@ export const ResumeButton = styled.a`
         font-size: 18px;
     } 
 `;
+
+

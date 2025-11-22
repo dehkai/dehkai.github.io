@@ -1,6 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 import { skills } from '../../data/constants'
+import SectionWrapper from '../SectionWrapper';
+import { motion } from 'framer-motion';
 
 const Container = styled.div`
 display: flex;
@@ -66,16 +68,8 @@ const Skill = styled.div`
   padding: 18px 36px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  
-  &:hover {
-    transform: translateY(-8px);
-    background: ${({ theme }) => `${theme.card}90`};
-    border: 1px solid ${({ theme }) => `${theme.primary}50`};
-    box-shadow: 0 15px 45px rgba(133, 76, 230, 0.2);
-  }
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -114,11 +108,6 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    box-shadow: 0 0 10px rgba(133, 76, 230, 0.3);
-    transform: scale(1.05);
-  }
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
@@ -136,20 +125,43 @@ const SkillImage = styled.img`
 
 
 const Skills = () => {
+  const theme = useTheme();
   return (
-    <Container id="skills">
+    <Container as={SectionWrapper} id="skills">
       <Wrapper>
         <Title>Skills</Title>
         <Desc>Here are some of my skills on which I have been working on for the past few years.
         </Desc>
         <SkillsContainer>
-          {skills.map((skill) => (
-            <Skill>
+          {skills.map((skill, index) => (
+            <Skill
+              as={motion.div}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{
+                y: -8,
+                backgroundColor: `${theme.card}90`,
+                borderColor: `${theme.primary}50`,
+                boxShadow: "0 15px 45px rgba(133, 76, 230, 0.2)"
+              }}
+            >
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image}/>
+                {skill.skills.map((item, i) => (
+                  <SkillItem
+                    as={motion.div}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: i * 0.05 + index * 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: "0 0 10px rgba(133, 76, 230, 0.3)"
+                    }}
+                  >
+                    <SkillImage src={item.image} />
                     {item.name}
                   </SkillItem>
                 ))}
