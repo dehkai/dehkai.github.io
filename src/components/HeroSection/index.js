@@ -64,7 +64,26 @@ const HeroSection = () => {
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">
-                        <Img src={HeroImg} alt="hero-image" />
+                        <Img
+                            src={HeroImg}
+                            alt="hero-image"
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            animate={{
+                                opacity: 1,
+                                scale: 1,
+                                y: [0, -20, 0]
+                            }}
+                            transition={{
+                                opacity: { duration: 0.5 },
+                                scale: { duration: 0.5 },
+                                y: {
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut"
+                                }
+                            }}
+                            whileHover={{ scale: 1.05, rotate: 2 }}
+                        />
                     </HeroRightContainer>
                 </HeroInnerContainer>
             </HeroContainer>

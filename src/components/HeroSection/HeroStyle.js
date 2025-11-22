@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from 'react-scroll';
 import _default from "../../themes/default";
+import { motion } from "framer-motion";
 
 export const HeroContainer = styled.div`
   background: transparent;
@@ -94,22 +95,18 @@ export const HeroRightContainer = styled.div`
   }
 `;
 
-export const Img = styled.img`
+export const Img = styled(motion.img)`
   position: relative;
   width: 100%;
   height: 100%;
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(133, 76, 230, 0.3);
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    border: 2px solid rgba(133, 76, 230, 0.5);
-    box-shadow: 0 0 30px rgba(133, 76, 230, 0.5);
-  }
+  border: 2px solid ${({ theme }) => theme.primary};
+  box-shadow: 0 0 50px rgba(133, 76, 230, 0.6);
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     max-width: 400px;
