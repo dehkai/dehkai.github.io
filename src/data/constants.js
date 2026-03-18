@@ -40,12 +40,12 @@ export const skills = [
       {
         name: "CSS",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+          "csslogo.png",
       },
       {
         name: "JavaScript",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+          "javascriptlogo.webp",
       },
       {
         name: "Bootstrap",
@@ -55,7 +55,7 @@ export const skills = [
       {
         name: "AngularJS",
         image:
-            "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/angularjslogo.png?alt=media&token=f7d1035f-ec3c-4f32-924e-23578b1abafc",
+            "angularjslogo.png",
       },
       {
         name: "Flutter",
@@ -65,7 +65,7 @@ export const skills = [
       {
         name: "Material UI",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/materialui.png?alt=media&token=64f3c0e5-aecb-49a8-9a87-0bc8015fec19",
+          "materialuilogo.svg",
       },
     ],
   },
@@ -74,28 +74,28 @@ export const skills = [
     skills: [
       {
         name: "NodeJS",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/nodejs.webp?alt=media&token=108bf9c3-0008-4136-9d67-167c0126bd68",
+        image: "nodejslogo.svg",
       },
       {
         name: "ExpressJS",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/express-js.png?alt=media&token=384c2e9b-8b55-4a37-9ffb-f014a428791e",
+        image: "expressjslogo.png",
       },
       {
         name: "Spring",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/spring.svg?alt=media&token=8f1ab888-f283-44bd-b689-118c9fa12d5a",
+        image: "springlogo.svg",
       },
       {
         name: "PHP",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/PHP-logo.svg.png?alt=media&token=dd5b5b8a-717d-45e7-8888-6ed595d27d0c",
+        image: "phplogo.png",
       },
       {
         name: "C#",
         image:
-        "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/C-Sharp-logo.png?alt=media&token=6c64fd3c-0d85-4468-bf2e-ad2894558948"
+        "csharplogo.png",
       },
       {
         name: "ASP.Net",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/asp.net.webp?alt=media&token=598baf28-198d-4841-a899-5ea73fd68dad",
+        image: "aspnetlogo.png",
       },
       // {
       //   name: "C",
@@ -127,11 +127,11 @@ export const skills = [
       },
       {
         name: "MongoDB",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/mongodb.svg?alt=media&token=249696c4-f999-45a4-8bb6-eb647662c697",
+        image: "mongodblogo.svg",
       },
       {
         name: "Postgresql",
-        image: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/postgresql.webp?alt=media&token=20889f53-1820-49f0-8d78-f18ffb2a5a24",
+        image: "postgresqllogo.png",
       },
     ],
   },
@@ -141,47 +141,47 @@ export const skills = [
       {
         name: "AWS EC2",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/aws-ec2-icon.png?alt=media&token=a5e43c3d-c208-46e6-aa33-d1ef712a4a99",
+          "awsec2logo.svg",
       },
       {
         name: "Netlify",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/netlify.svg?alt=media&token=98061b31-3677-4130-8eb4-25f2ff9b7bba",
+          "netlifylogo.png",
       },
       {
         name: "Docker",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/docker.png?alt=media&token=bcc18c16-f663-4ce3-8c60-a51ba90f6fc7",
+          "dockerlogo.svg",
       },
       {
         name: "DigitalOcean",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/digitalocean.png?alt=media&token=446cfe52-7c62-45c1-b560-7c997ac0e72b",
+          "digitaloceanlogo.webp",
       },
       {
         name: "Git",
         image:
-        "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Git.png?alt=media&token=720b15a1-b826-4f31-8b9b-28c9cde09c3b"
+        "gitlogo.svg",
       },
       {
         name: "GitHub",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/github.png?alt=media&token=d71d0d32-54a4-40c1-94d5-840a2a52411d",
+          "githublogo.webp",
       },
       {
         name: "GitLab",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/gitlab.svg?alt=media&token=e9d9dbc7-5848-431a-bfaa-c91d89ac7018",
+          "gitlablogo.svg",
       },
       {
         name: "Jira",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/jira.svg?alt=media&token=4c91ac0e-a1c5-4a10-9496-10f60feaca70",
+          "jiralogo.png",
       },
       {
         name: "Nginx",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/nginx.svg?alt=media&token=1aa948e9-b9c6-4e87-be60-5dcd833ae76a",
+          "nginxlogo.svg",
       },
     ],
   },
@@ -221,7 +221,7 @@ export const skills = [
       {
         name: "Rasa",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/rasa.avif?alt=media&token=9a14fb02-cf84-4002-bb09-63bd221300c2",
+          "rasalogo.avif",
       },
     ],
   },
@@ -236,27 +236,37 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/postman-icon.svg?alt=media&token=eb17bb23-26f7-498d-990d-b000b57fe3da",
+          "postmanlogo.webp",
       },
       {
         name: "Adobe XD",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Adobe_XD_CC_icon.svg.png?alt=media&token=802791c9-05c5-464a-ae68-c2e2085d0597",
+          "adobexdlogo.svg",
       },
       {
         name: "Figma",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/figma-logo-512.webp?alt=media&token=9506003a-dd45-433c-808f-2a142cca606a",
+          "figmalogo.svg",
       },
       {
         name: "Cloudflare",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Cloudflare_Logo.png?alt=media&token=dca31e3d-bed0-40a1-9b5a-cf461cfcfe61",
+          "cloudflarelogo.png",
       },
       {
         name: "UiPath",
         image:
-          "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/uipath%20logo.png?alt=media&token=3bf0112b-3f4a-456c-965c-193784947dcf",
+          "uipathlogo.png",
+      },
+      {
+        name: "Power Automate",
+        image:
+          "powerautomatelogo.png",
+      },
+      {
+        name: "Power BI",
+        image:
+          "powerbilogo.png",
       }
     ],
   },
@@ -265,7 +275,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/timetec.png?alt=media&token=1ee81522-926a-474f-8aa1-e67324251395",
+    img: "timeteclogo.png",
     role: "Web Developer Intern",
     company: "TimeTec Cloud Sdn Bhd",
     date: "Jan 2023 - Jun 2023",
@@ -277,14 +287,14 @@ export const experiences = [
       "C#",
       "Debugging",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/offerletterTimeTec.JPG?alt=media&token=f9026cf8-4c35-4baa-89a5-2a282a350708",
+    doc: "timetecofferletter.png",
   },
   {
     id: 1,
     img: "dhl-logo.png",
     role: "Industrial Trainee - Software Development",
     company: "DHL Global Finance Services - Asia Pacific",
-    date: "August 2025 - Present",
+    date: "Aug 2025 - Feb 2026",
     desc: "Contributed to system enhancements and digitalization projects by developing web applications, supporting process improvements, and collaborating with cross-functional teams.",
     skills: [
       "ReactJs",
@@ -292,7 +302,8 @@ export const experiences = [
       "ExpressJs",
       "ASP.NET",
       "MSSQL",
-      "Power Platform",
+      "Power BI",
+      "Power Automate"
     ],
   },
   /*
@@ -364,7 +375,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/UTM-logo%20(1).png?alt=media&token=5fb669db-dc5f-4fcf-9604-2aef85d87f1a",
+    img: "utmlogo.jpg",
     school: "Universiti Teknologi Malaysia, Skudai",
     date: "Sep 2023 - Present",
     grade: "3.91/4.0",
@@ -373,7 +384,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/UTM-logo%20(1).png?alt=media&token=5fb669db-dc5f-4fcf-9604-2aef85d87f1a",
+    img: "utmlogo.jpg",
     school: "Universiti Teknologi Malaysia, Kuala Lumpur",
     date: "Apr 2019 - Apr 2023",
     grade: "3.91/4.0",
@@ -398,8 +409,8 @@ export const projects = [
     date: "Oct 2024 - Jan 2025",
     description:"Voxia is an intelligent AI assistant platform that specializes in travel-related tasks and document automation. Built with modern technologies, it offers a seamless experience for flight and hotel searches, travel request generation, and PDF form auto-filling.",
 
-   image:
-      "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Voxia1.JPG?alt=media&token=4c5bc0ea-358e-4491-8f78-b7f5e07680a1",
+  //  image:
+  //     "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/Voxia1.JPG?alt=media&token=4c5bc0ea-358e-4491-8f78-b7f5e07680a1",
     tags: [
       "Python",
       "ReactJS",
@@ -423,8 +434,8 @@ export const projects = [
     date: "Oct 2024 - Jan 2025",
     description:"The TVPSS Management Information System was developed to streamline the monitoring and management of the TV Pusat Sumber Sekolah (TVPSS) program, which empowers students to showcase their talents in journalism, media, and hosting. The system provides a centralized platform for collecting and accessing essential data, such as school branding, crew profiles, equipment levels, and YouTube channel links. With features like a user-friendly interface, search and filter functionality, and content library management, the system enables efficient resource allocation, improved decision-making, and enhanced communication between schools and the central management team.",
 
-   image:
-      "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/TVPSS.JPG?alt=media&token=fec139c2-0fb6-4693-b800-455f172a0cd8",
+  //  image:
+  //     "tvpss.png",
     tags: [
       "Java",
       "Spring Boot",
@@ -447,8 +458,8 @@ export const projects = [
     date: "Mar 2024 - Jun 2024",
     description:"A mobile application for freelancer to search job and employer to post job.",
 
-   image:
-      "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/WorkWise.JPG?alt=media&token=18c286d5-9f0c-4a3e-b992-4024960eda67",
+  //  image:
+  //     "https://firebasestorage.googleapis.com/v0/b/dehkai.appspot.com/o/WorkWise.JPG?alt=media&token=18c286d5-9f0c-4a3e-b992-4024960eda67",
     tags: [
       "Flutter",
       "Firebase"
