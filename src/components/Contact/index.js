@@ -159,6 +159,12 @@ const ContactButton = styled.input`
     transform: translateY(2px);
     box-shadow: 0 4px 16px rgba(133, 76, 230, 0.2);
   }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
 `
 
 
@@ -167,17 +173,23 @@ const Contact = () => {
 
   //hooks
   const [open, setOpen] = React.useState(false);
+  const [error, setError] = React.useState(null);
+  const [loading, setLoading] = React.useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setError(null);
+    setLoading(true);
     emailjs.sendForm('service_aer2pid', 'template_l4jmmgb', form.current, 'BbWWAmzTdSQGY_-Zi')
       .then((result) => {
         setOpen(true);
         form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
+      }, (err) => {
+        console.error('EmailJS error:', err);
+        setError(err?.text || err?.message || 'Failed to send. Please try again or email me directly.');
+      })
+      .finally(() => setLoading(false));
   }
 
 
@@ -193,14 +205,21 @@ const Contact = () => {
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value={loading ? "Sending..." : "Send"} disabled={loading} />
         </ContactForm>
         <Snackbar
           open={open}
           autoHideDuration={6000}
           onClose={() => setOpen(false)}
           message="Email sent successfully!"
-          severity="success"
+          ContentProps={{ sx: { backgroundColor: 'success.main' } }}
+        />
+        <Snackbar
+          open={!!error}
+          autoHideDuration={8000}
+          onClose={() => setError(null)}
+          message={error}
+          ContentProps={{ sx: { backgroundColor: 'error.main' } }}
         />
       </Wrapper>
     </Container>
