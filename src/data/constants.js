@@ -7,7 +7,7 @@ export const Bio = {
   description:
     "I am a proactive and adaptable individual who enjoys taking on new challenges and continuously improving my skills. With a strong commitment to learning and problem-solving, I strive to deliver high-quality results while contributing effectively to team and project success.",
   github: "https://github.com/dehkai",
-  resume:"https://drive.google.com/file/d/11eHLmrkpeH_N1mLOAw1FRawV9Bezc5H4/view?usp=sharing",
+  resume:"https://drive.google.com/file/d/1wLrkMrpgUmVRXvFEgnJCIufgEzS9KtBS/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/yapdehkai/",
   twitter: "https://twitter.com/dehkai1",
   insta: "https://www.instagram.com/dk_0909_/",
